@@ -43,9 +43,9 @@ namespace zadanie
         static void Main(string[] args)
         {
             StreamWriter writer = new StreamWriter("100wynikow.txt");
+            Random random = new Random();
             for (int i = 0; i < 100 ; i++)
             {
-                Random random = new Random();
                 int v = random.Next();
                 writer.WriteLine(Convert.ToString(v, 2) + " " + Solution.solution(v));
             }
